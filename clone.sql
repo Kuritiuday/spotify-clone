@@ -5,5 +5,3 @@ CREATE TABLE users (
     password VARCHAR(255) NOT NULL,
     UNIQUE(username)
 );
-INSERT IGNORE INTO users (username, email, password) 
-VALUES (%s, %s, %s);
